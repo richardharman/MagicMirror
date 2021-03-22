@@ -7,7 +7,6 @@
  * See https://github.com/MichMich/MagicMirror#configuration
  *
  */
-
 var config = {
 	address: "localhost", 	// Address to listen on, can be:
 							// - "localhost", "127.0.0.1", "::1" to listen on loopback interface
@@ -45,10 +44,6 @@ var config = {
 			module: "updatenotification",
 			position: "top_bar"
 		},
-		/*{
-			module: "clock",
-			position: "top_left"
-		},*/
 {
   module: 'MMM-Worldclock',
   position: 'top_right', // This can be any of the regions, best results in top_left or top_right regions
@@ -94,35 +89,23 @@ var config = {
     ]
  	 }
 	 },
-                {
-    			module: 'DailyXKCD',
-			position: 'top_left',
-			config: {
-			invertColors: true,
-			showTitle: true,
-			showAltText: false,
-			randomComic: true
+	{
+    	module: 'DailyXKCD',
+		position: 'top_left',
+		config: {
+		invertColors: true,
+		showTitle: true,
+		showAltText: false,
+		randomComic: true
 				}
  		},
-		/*{
-			module: "calendar",
-			header: "US Holidays",
-			position: "top_left",
-			config: {
-				calendars: [
-					{
-						symbol: "calendar-check",
-						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"					}
-				]
-			}
-		},*/
-		/*{
-			module: "compliments",
-			position: "lower_third"
-		},
-		
-
 		{
+			module: "compliments",
+			position: "lower_third",
+			config: { remoteFile: 'https://raw.githubusercontent.com/richardharman/MagicMirror/main/copy.json?token=ABW6DTQGLCVPQNN4DASB6ITALCPXS'
+					}
+			},
+		/*{
 			module: "currentweather",
 			position: "top_right",
 			config: {
